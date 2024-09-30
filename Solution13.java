@@ -16,17 +16,21 @@
 
 class Solution {
     public void sortColors(int[] nums) {
-        int n = nums.length();
-        int ptr = 0
+        //去掉()
+        int n = nums.length;
+        //添加分号
+        int ptr = 0;
         for (int i = 0; i < n; ++i) {
-            if (nums(i) == 0) {
+            //更改数组表示方式
+            if (nums[i] == 0) {
                 int temp = nums[i];
                 nums[i] = nums[ptr];
                 nums[ptr] = temp;
                 ++ptr;
             }
         }
-        for {int i = ptr; i < n; ++i} {
+        //{}改为()
+        for (int i = ptr; i < n; ++i) {
             if (nums[i] == 1) {
                 int temp = nums[i];
                 nums[i] = nums[ptr];
